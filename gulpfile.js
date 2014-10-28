@@ -36,7 +36,7 @@ gulp.task('css', ['tree'], function() {
     return tree.deps('pages/index')
         .pipe(bem.src('{bem}.css'))
         .pipe(concatCSS('index.css'))
-        .pipe(replace(/url\("../gim, 'url("../blocks'))
+        .pipe(replace(/url\("../gim, 'url("blocks'))
         .pipe(gulp.dest('dist'));
 });
 
