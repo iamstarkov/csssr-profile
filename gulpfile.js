@@ -9,6 +9,7 @@ var buildBranch = require('buildbranch');
 var watch = require('gulp-watch');
 var debug = require('gulp-debug');
 var replace = require('gulp-replace');
+var uglify = require('gulp-uglify');
 
 var levels = ['blocks', 'pages'];
 
