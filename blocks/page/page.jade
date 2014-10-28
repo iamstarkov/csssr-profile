@@ -1,0 +1,16 @@
+mixin page(lang, title)
+  doctype html
+  html(lang="#{lang}").page
+    head.page__head
+      title #{title}
+      meta(charset="utf-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      link(rel="icon" href="//csssr.ru/favicon.ico")
+      link(rel="stylesheet" href="/index.css")
+      link(rel='stylesheet' href='//fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,cyrillic,latin,latin-ext')
+
+    body.page__body
+      block
+
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src="/index.js")

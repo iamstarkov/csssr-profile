@@ -1,0 +1,33 @@
+.profile-note {
+    margin-top: 24px;
+}
+
+.profile-note_type_js {
+    margin-top: 54px;
+    margin-bottom: 14px;
+}
+
+.profile-note__title {
+    margin-bottom: 11px;
+}
+
+.profile-note__desc {
+    color: #3D3D3D;
+    font-size: 14px;
+    line-height: 22px;
+    position: relative;
+    padding-left: 21px;
+}
+
+.profile-note__desc::before {
+    content: "*";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 22px;
+    margin-top: 8px;
+    width: 21px;
+    text-align: center;
+}

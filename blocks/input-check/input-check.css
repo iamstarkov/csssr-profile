@@ -1,0 +1,19 @@
+.input-check {
+    line-height: 25px;
+}
+
+.input-check__input {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-image: url('input-check.png');
+    bottom: -2px;
+}
+
+.input-check__input_enabled {  background-position: 0 0; }
+.input-check__input_focus,
+.input-check__input_hover {    background-position: -24px 0; }
+.input-check__input_checked {  background-position: -48px 0; }
+.input-check__input_disabled { background-position: -72px 0; }
+
+.input-check__label { padding-left: 5px; }

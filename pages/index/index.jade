@@ -1,0 +1,78 @@
++page('ru', 'Тестовое задание для CSSSR')
+  .layout
+    header.header
+      +logo()
+        | Секретный архив учреждения
+    .content
+      form.profile-form
+        h1.profile-form__logo Дело
+
+        .profile-form__section
+          +input-text('name', 'Полное ФИО', 'Владимир Старков')
+          +input-text('year', 'Год рождения', '1991')
+          +input-text('location', 'Место жительства', 'г. Екатеринбург, Россия, 620025')
+          +input-text('skype', 'Skype', 'matmuchrapna')
+          +input-text('mail', 'Почта', 'matmuchrapna@gmail.com')
+
+        .profile-form__section
+          .profile-form__wrap
+            span.profile-form__label.profile-form__label_no-pointer
+              :markdown
+                Выпускник [htmlacademy.ru](htmlacademy.ru)
+            +input-radio('Да')
+            +input-radio('Нет', true)
+
+        .profile-form__section
+          .profile-form__wrap
+            .profile-note
+              .profile-note__title.profile-form__label.profile-form__label_no-pointer
+                | Практические навыки
+              .profile-note__desc
+                | Отметьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутствие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.
+
+        .profile-form__section
+          .profile-form__wrap
+            ul.profile-form__list.clearfix
+              - var skills = [];
+              - skills.push(['Методология БЭМ', true])
+              - skills.push(['Jade', true])
+              - skills.push(['Верстка рассылок', true])
+              - skills.push(['jQuery', true])
+              - skills.push(['Stylus'])
+              - skills.push(['Адаптивная верстка', true])
+              - skills.push(['Умею Grunt', true])
+              - skills.push(['Использую gulp', true])
+              - skills.push(['Знаю (изучаю) Angular', true])
+              - skills.push(['Использую Dropbox'])
+              - skills.push(['HAML'])
+              - skills.push(['Верстка под Android'])
+              - skills.push(['Использую Gmail', true])
+              - skills.push(['SASS'])
+              - skills.push(['Верстка под iOS'])
+              - skills.push(['Использую GitHub', true])
+              - skills.push(['LESS', true])
+              - skills.push(['Верстка под Windows Phone'])
+              - skills.push(['CoffeeScript'])
+
+              each skill in skills
+                li.profile-form__list-item
+                  +input-check(skill[0], skill[1])
+
+        .profile-form__section
+          .profile-form__wrap
+            .profile-note.profile-note_type_js
+              .profile-note__title.profile-form__label.profile-form__label_no-pointer
+                | Уровень владения JavaScript
+            .nouislider(data-nouislider)
+              .nouislider__marker.nouislider__marker_state_noob
+                | Не владею
+              .nouislider__marker.nouislider__marker_state_beginner
+                | Использую готовые решения
+              .nouislider__marker.nouislider__marker_state_advanced
+                | Использую готовые решения и умею их переделывать
+              .nouislider__marker.nouislider__marker_state_god
+                | Пишу сложные скрипты
+
+        .profile-form__section
+          .profile-form__wrap
+            +input-text('date', 'Дата заполнения', '28.10.2014', true)

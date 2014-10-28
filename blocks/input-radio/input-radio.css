@@ -1,0 +1,16 @@
+.input-radio { margin-left: 30px; }
+.input-radio__label { padding-left: 5px; }
+
+.input-radio__input {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url('input-radio.png');
+    bottom: -6px;
+}
+
+.input-radio__input_enabled {  background-position: 0 0; }
+.input-radio__input_focus,
+.input-radio__input_hover {    background-position: -28px 0; }
+.input-radio__input_checked {  background-position: -56px 0; }
+.input-radio__input_disabled { background-position: -84px 0; }
