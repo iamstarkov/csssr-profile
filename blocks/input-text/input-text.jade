@@ -2,4 +2,4 @@ mixin input-text(type, label, data, fixed)
   label.input-text(class=fixed ? 'input-text_fixed' : '')
     span.input-text__label.profile-form__label #{label}
     .input-text__input-wrap(class="input-text__input-wrap_type_#{type}")
-      input.input-text__input(id=type value=data type='text')
+      input.input-text__input(name=type value=data type='text')
