@@ -1,0 +1,19 @@
+.header {
+    margin: 68px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.header::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+
+    height: 106px;
+    width: 252px;
+
+    background: url(header.png) 50% 50% no-repeat;
+
+    top: -19px;
+    right: -67px;
+}

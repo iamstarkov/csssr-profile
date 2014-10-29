@@ -1,0 +1,57 @@
+.input-text {
+    height: 61px;
+    position: relative;
+    display: block;
+}
+
+.input-text__label {
+    padding-top: 38px;
+}
+
+.input-text__input-wrap {
+    position: absolute;
+    left: 100px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.input-text_fixed .input-text__input-wrap {
+    right: auto;
+    width: 230px;
+}
+
+.input-text__input-wrap::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    background: url('input-text__input-wrap.png') 50% 50% repeat-x;
+
+}
+
+.input-text__input {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    background: transparent;
+    width: 100%;
+    padding: 5px 15px;
+    border: none;
+    font-family: Courier, monospace;
+    color: #231f20;
+    font-size: 30px;
+}
+
+.input-text__input-wrap_type_name { left: 140px; }
+.input-text__input-wrap_type_year { left: 150px; }
+.input-text__input-wrap_type_location { left: 190px; }
+.input-text__input-wrap_type_skype { left: 75px; }
+.input-text__input-wrap_type_mail { left: 75px; }
+.input-text__input-wrap_type_date { left: 180px; }
