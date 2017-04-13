@@ -1,5 +1,7 @@
 # Секретный архив учреждения
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/iamstarkov/csssr-profile.svg)](https://greenkeeper.io/)
+
 ## Старт разработки
 
     git clone https://github.com/matmuchrapna/csssr-profile.git csssr-profile
